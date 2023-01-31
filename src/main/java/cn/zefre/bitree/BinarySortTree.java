@@ -44,8 +44,8 @@ public class BinarySortTree<E extends Comparable<E>> {
      * 若找到元素，返回对应结点，否则返回null
      *
      * @param elem 查找元素
-     * @author zefre
      * @return 元素对应结点
+     * @author zefre
      */
     public BSTNode<E> get(E elem) {
         if (null == elem) return null;
@@ -57,8 +57,8 @@ public class BinarySortTree<E extends Comparable<E>> {
      *
      * @param elem 查找元素
      * @param node 查找结点
-     * @author zefre
      * @return 找到返回对应结点，否则返回null
+     * @author zefre
      */
     private BSTNode<E> get(E elem, BSTNode<E> node) {
         // 未查找到元素结点
@@ -76,8 +76,8 @@ public class BinarySortTree<E extends Comparable<E>> {
      * 插入元素
      *
      * @param elem 待插入元素
-     * @author zefre
      * @return 插入成功返回true，元素存在则返回false
+     * @author zefre
      */
     public boolean add(E elem) {
         if (null == elem) return false;
@@ -125,8 +125,8 @@ public class BinarySortTree<E extends Comparable<E>> {
      *
      * @param elem 待插入元素
      * @param node 结点
-     * @author zefre
      * @return 原结点
+     * @author zefre
      */
     private BSTNode<E> insert(E elem, BSTNode<E> node) {
         if (null == node)
@@ -144,8 +144,8 @@ public class BinarySortTree<E extends Comparable<E>> {
      * 删除结点
      *
      * @param elem 待删除元素
-     * @author zefre
      * @return 成功删除返回true，元素不存在返回false
+     * @author zefre
      */
     public boolean remove(E elem) {
         if (null == elem || null == root) return false;
@@ -181,7 +181,7 @@ public class BinarySortTree<E extends Comparable<E>> {
      * 左右子树都存在时可以找它中序遍历下的直接前驱或直接后继来替代它
      *
      * @param deletedNode 删除结点
-     * @param parent 删除结点的双亲
+     * @param parent      删除结点的双亲
      * @author zefre
      */
     private void removeNode(BSTNode<E> deletedNode, BSTNode<E> parent) {
@@ -220,8 +220,8 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 先序遍历
      *
-     * @author zefre
      * @return 先序遍历结果集
+     * @author zefre
      */
     public List<E> preOrder() {
         List<BSTNode<E>> orderList = new ArrayList<>();
@@ -232,8 +232,8 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 中序遍历
      *
-     * @author zefre
      * @return 中序遍历结果集
+     * @author zefre
      */
     public List<E> inOrder() {
         List<BSTNode<E>> orderList = new ArrayList<>();
@@ -244,8 +244,8 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 后序遍历
      *
-     * @author zefre
      * @return 后序遍历结果集
+     * @author zefre
      */
     public List<E> postOrder() {
         List<BSTNode<E>> orderList = new ArrayList<>();
@@ -256,8 +256,8 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 层序遍历
      *
-     * @author zefre
      * @return 层序遍历结果集
+     * @author zefre
      */
     public List<E> sequence() {
         List<BSTNode<E>> sequenceList = new ArrayList<>();
@@ -277,7 +277,7 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 先序遍历二叉树
      *
-     * @param node 遍历结点
+     * @param node         遍历结点
      * @param preOrderList 先序遍历结果集合
      * @author zefre
      */
@@ -291,7 +291,7 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 中序遍历二叉树
      *
-     * @param node 遍历结点
+     * @param node        遍历结点
      * @param inOrderList 中序遍历结果集
      * @author zefre
      */
@@ -305,7 +305,7 @@ public class BinarySortTree<E extends Comparable<E>> {
     /**
      * 后序遍历二叉树
      *
-     * @param node 遍历结点
+     * @param node          遍历结点
      * @param postOrderList 后序遍历结果集
      * @author zefre
      */

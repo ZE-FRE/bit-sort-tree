@@ -333,13 +333,13 @@ public class RedBlackTree<E extends Comparable<E>> {
      *            parent(?)                                 parent(?)
      *          //      \\                                //      \\
      *      delete(黑) sibling(黑)       or          sibling(黑)  delete(黑)
-     *                 //  \\                       //      \\
+     *                 //   \\                      //      \\
      *                ?   sib-child(红)       sib-child(红)   ?
      *
      *
      *  2.兄弟结点两个孩子都是黑色(null结点也是黑色)
      *          parent(?)                          parent(?)
-     *        //      \\             or          //      \\
+     *        //       \\             or         //        \\
      *    delete(黑)  sibling(黑)             sibling(黑)  delete(黑)
      *
      * @param node 调整结点
